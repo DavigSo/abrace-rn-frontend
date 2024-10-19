@@ -13,9 +13,8 @@ html {
 
 body {
   font-family: "Sylvia_Angel", sans-serif;
-
-  background-color: var(--azul-background);
-  color: var(--azul-escuro);
+  background-color: #8fd3d5; /* var(--azul-background) substituído */
+  color: #4bb9ba; /* var(--azul-escuro) substituído */
   line-height: 1.6;
   min-height: 100vh;
   padding: 0;
@@ -24,16 +23,6 @@ body {
 
 @font-face {
   font-family: "Sylvia_Angel", sans-serif;
-}
-
-/* Cores Globais */
-:root {
-  --rossa-escuro: #f68597;
-  --rosa-claro: #feebee;
-  --branco: #fff;
-  --azul-escuro: #4bb9ba;
-  --azul-claro: #bbe4e5;
-  --azul-background: #8fd3d5;
 }
 
 /* Títulos */
@@ -53,6 +42,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin-top: 60px;
 }
 
 .section {
@@ -74,14 +64,14 @@ body {
 }
 
 .fundo-claro {
-  background-color: var(--azul-claro);
-  color: var(--azul-escuro);
+  background-color: #bbe4e5; /* var(--azul-claro) substituído */
+  color: #4bb9ba; /* var(--azul-escuro) substituído */
   width: 100%;
 }
 
 .fundo-escuro {
-  background-color: var(--azul-background);
-  color: var(--branco);
+  background-color: #8fd3d5; /* var(--azul-background) substituído */
+  color: #fff; /* var(--branco) substituído */
   width: 100%;
 }
 

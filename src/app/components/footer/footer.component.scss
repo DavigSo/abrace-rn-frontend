@@ -1,7 +1,17 @@
+/* Estilos globais para garantir que o footer fique na parte inferior */
+html,
+body {
+  height: 100%; /* Certifique-se de que o body ocupa toda a altura */
+  margin: 0; /* Remover margens do body */
+  display: flex; /* Usar flexbox no body */
+  flex-direction: column; /* Organizar os elementos em coluna */
+}
+
 footer {
   background-color: #4cc1c2; /* Cor principal */
   padding: 20px 0;
   text-align: center;
+  margin-top: auto; /* Isso empurra o footer para baixo */
 }
 
 .footer-container {
@@ -25,7 +35,6 @@ footer {
 
 .footer-right p {
   margin: 0 0 10px 0;
-
   color: #fff;
   text-align: right;
   font-family: Montserrat;

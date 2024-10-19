@@ -4,10 +4,10 @@ import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
-  selector: 'app-sobre',
+  selector: 'app-lojinha',
   standalone: true,
   imports: [NgOptimizedImage, HeaderComponent, FooterComponent],
-  templateUrl: './sobre.component.html',
-  styleUrl: './sobre.component.scss',
+  templateUrl: './lojinha.component.html',
+  styleUrl: './lojinha.component.scss',
 })
-export class SobreComponent {}
+export class LojinhaComponent {}
