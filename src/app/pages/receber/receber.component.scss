@@ -1,0 +1,104 @@
+/* Estilização geral do formulário */
+form {
+  max-width: 1200px;
+  padding: 80px;
+  background: #feebee;
+  border-radius: 89px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: var(--rosa-escuro);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Alinhamento de form-group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 400;
+  color: var(--rosa-escuro);
+}
+
+/* Estilização dos inputs, selects e textarea */
+input,
+select,
+textarea {
+  padding: 10px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  color: #f9aab6;
+  font-family: "Sylvia Angel", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+/* Placeholder estilizado */
+::placeholder {
+  color: #f9aab6;
+  font-family: "Sylvia Angel", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+/* Estilização de focus */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--rosa-escuro);
+}
+
+/* Estilização dos botões */
+app-botao {
+  width: 100%;
+  height: 80px;
+  font-size: 24px;
+}
+
+/* Radio group estilização */
+.radio-group {
+  display: flex;
+  gap: 20px;
+  color: var(--rosa-escuro);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+  form {
+    padding: 30px;
+    font-size: 18px;
+  }
+  .radio-group {
+    flex-direction: column;
+  }
+  input,
+  select,
+  textarea {
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+  input,
+  select,
+  textarea {
+    height: 50px;
+    font-size: 16px;
+  }
+  textarea {
+    height: 150px;
+  }
+  app-botao {
+    font-size: 18px;
+    height: 60px;
+  }
+}

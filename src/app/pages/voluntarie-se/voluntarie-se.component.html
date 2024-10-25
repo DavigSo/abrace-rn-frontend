@@ -1,0 +1,120 @@
+<app-header></app-header>
+<main class="container-main">
+  <div class="content-center">
+    <div class="introducao">
+      <h1>Seja um voluntário!</h1>
+      <p>
+        Faça parte da mudança e contribua com o Projeto Abrace um Recém-Nascido! Há diversas maneiras de se envolver e ajudar, de acordo com suas habilidades e disponibilidade.
+      </p>
+      <p>Pronto para se juntar a essa causa?</p>
+      <ul>
+        <li>
+          <strong>Recolhimento de doações:</strong> Se você tem um carro, ajude na
+          coleta.
+        </li>
+        <li>
+          <strong>Oficinas:</strong> Ofereça aulas de costura, crochê, laços, ou
+          outras habilidades.
+        </li>
+        <li><strong>Apoio psicológico:</strong> Dê suporte emocional às mães.</li>
+      </ul>
+      <p>Preencha o formulário abaixo e venha fazer parte dessa transformação!</p>
+    </div>
+    <div class="formulario">
+      <form action="#" method="post" autocomplete="on">
+        <!-- Campo Nome em uma linha completa -->
+        <label for="name">Nome *</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Digite seu nome completo"
+          required
+          class="estilo-personalizado"
+        />
+
+        <!-- Campos CPF, Telefone e Cidade na mesma linha -->
+        <div class="form-row">
+          <div>
+            <label for="cpf">CPF *</label>
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              placeholder="xxx.xxx.xxx-xx"
+              required
+              class="estilo-personalizado"
+            />
+          </div>
+
+          <div>
+            <label for="phone">Telefone *</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="(xx) x xxxx-xxxx "
+              required
+              class="estilo-personalizado"
+            />
+          </div>
+
+          <div>
+            <label for="city">Cidade *</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              required
+              class="estilo-personalizado"
+            />
+          </div>
+        </div>
+
+        <!-- Campos Tipo de Ajuda e E-mail na mesma linha -->
+        <div class="form-row">
+          <div>
+            <label for="help-type">Tipo de ajuda *</label>
+            <select
+              id="help-type"
+              name="help-type"
+              required
+              class="estilo-personalizado"
+            >
+              <optgroup label="Tipo de ajuda">
+                <option value="">Recolhimento de doações</option>
+                <option value="oficinas">Oficinas</option>
+                <option value="psicologico">Apoio psicológico</option>
+                <option value="outro"  selected>Outro</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div>
+            <label for="email">E-mail *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+              required
+              class="estilo-personalizado"
+            />
+          </div>
+        </div>
+
+        <!-- Campo Conte como você pode nos ajudar -->
+        <label for="message">Como você pode nos ajudar?</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          class="estilo-personalizado"
+        ></textarea>
+
+        <app-botao btn-text="Enviar" variant="rosa-letra-branca"></app-botao>
+      </form>
+    </div>
+  </div>
+</main>
+<app-footer></app-footer>

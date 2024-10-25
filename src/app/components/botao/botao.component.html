@@ -1,0 +1,10 @@
+<button
+    [class]="'botao ' + variant"
+    [disabled]="disabled"
+>
+    @if(!loading){
+        {{ btnText }}
+    }@else {
+        Carregando...
+    }
+</button>
