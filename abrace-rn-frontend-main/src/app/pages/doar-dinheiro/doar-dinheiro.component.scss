@@ -1,0 +1,37 @@
+.donation-container {
+  background-color: var(--rosa-escuro);
+  padding: 40px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.donation-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.donation-options div {
+  background-color: #F7B1BC;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.kit-composition {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.kit-composition div {
+  background-color: #F7B1BC;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+}
