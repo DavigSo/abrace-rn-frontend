@@ -1,153 +1,23 @@
-.formulario {
-  max-width: 1200px;
-  padding: 80px;
-  color: var(--rosa-escuro);
-  font-size: 20px;
-  font-weight: 700;
-  border-radius: 89px;
-  background: #feebee;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
+import { VoluntarieSeComponent } from './voluntarie-se.component';
 
-.estilo-personalizado {
-  margin: 15px 274px 73px 0px;
-}
+describe('VoluntarieSeComponent', () => {
+  let component: VoluntarieSeComponent;
+  let fixture: ComponentFixture<VoluntarieSeComponent>;
 
-::placeholder {
-  color: #F9AAB6;
-  font-family: "Sylvia Angel", sans-serif;
-  font-size: 20px;
-  font-weight: 200;
-}
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [VoluntarieSeComponent]
+    })
+    .compileComponents();
 
-.form-row {
-  line-height: normal;
-  display: flex;
-  justify-content: space-between;
-}
+    fixture = TestBed.createComponent(VoluntarieSeComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
-.form-row > * {
-  color: var(--rosa-escuro);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  flex: 1;
-  margin-right: 10px; /* Espaço entre os inputs */
-}
-
-.form-row > *:last-child {
-  margin-right: 0; /* Remove o espaço extra do último elemento */
-}
-
-input,
-select,
-option,
-textarea {
-  height: 64px;
-  color: #F9AAB6;
-  font-family: "Sylvia Angel", sans-serif;
-  font-size: 20px;
-  font-weight: 200;
-  border-radius: 10px;
-  border: 1px solid #fff;
-  background: #fff;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none; /* Remove a borda padrão de foco */
-  border: 1px solid var(--rosa-escuro); /* (Opcional) Define uma borda personalizada, se desejar */
-}
-
-label {
-  font-weight: 400;
-}
-
-textarea {
-  height: 220px;
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 1024px) {
-  .informacoes p {
-    width: 80%; /* Reduz a largura do texto */
-    font-size: 24px; /* Diminui o tamanho da fonte */
-  }
-
-  .informacoes h1 {
-    font-size: 36px; /* Diminui o tamanho do título */
-  }
-
-  .informacoes h3 {
-    font-size: 28px; /* Ajusta o subtítulo */
-  }
-
-  .formulario {
-    padding: 40px; /* Reduz o padding */
-    font-size: 18px;
-  }
-
-  .form-row {
-    flex-direction: column; /* Coloca os inputs um embaixo do outro */
-  }
-
-  .estilo-personalizado {
-    margin: 15px 0; /* Remove as margens laterais */
-  }
-
-  button {
-    width: 100%; /* Botão ocupa toda a largura disponível */
-    height: 80px; /* Diminui a altura */
-    font-size: 24px; /* Ajusta o tamanho da fonte */
-  }
-}
-
-/* Ajuste para dispositivos móveis */
-@media (max-width: 600px) {
-  .informacoes p {
-    width: 100%; /* O texto ocupa toda a largura */
-    font-size: 18px;
-  }
-
-  .informacoes h1 {
-    font-size: 24px;
-  }
-
-  .informacoes h3 {
-    font-size: 20px;
-  }
-
-  .formulario {
-    padding: 20px;
-  }
-
-  input,
-  select,
-  option,
-  textarea {
-    height: 50px; /* Ajusta a altura dos inputs */
-    font-size: 16px; /* Diminui o tamanho da fonte */
-  }
-
-  textarea {
-    height: 150px; /* Ajusta a altura da textarea */
-  }
-
-  button {
-    font-size: 18px;
-    height: 60px;
-  }
-}
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

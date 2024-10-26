@@ -5,192 +5,179 @@
       <h1>Conte com a gente!</h1>
       <p>Preencha seus dados para receber a ajuda que precisa</p>
     </div>
-    <div class="formulario">
-      <form action="#" method="post" autocomplete="on">
-        <div class="form-group">
-          <label for="nome">Nome:</label>
+    <form
+      class="container-formulario"
+      action="#"
+      method="post"
+      autocomplete="on"
+    >
+      <!-- Nome -->
+      <div class="form-row">
+        <div class="container-input">
+          <label for="nome">Nome: *</label>
           <input
             type="text"
             id="nome"
             name="nome"
+            placeholder="Nome completo"
             required
-            class="estilo-personalizado"
           />
         </div>
+      </div>
 
-        <div class="form-row">
-          <div>
-            <label for="cpf">CPF:</label>
-            <input
-              type="text"
-              id="cpf"
-              name="cpf"
-              required
-              class="estilo-personalizado"
-            />
-          </div>
-          <div>
-            <label for="telefone">Telefone:</label>
-            <input
-              type="tel"
-              id="telefone"
-              name="telefone"
-              required
-              class="estilo-personalizado"
-            />
-          </div>
-          <div>
-            <label for="data-parto">Data Provável do Parto:</label>
-            <input
-              type="date"
-              id="data-parto"
-              name="data-parto"
-              required
-              class="estilo-personalizado"
-            />
-          </div>
+      <!-- CPF telefone DPP -->
+      <div class="form-row">
+        <div class="container-input tres-colunas">
+          <label for="cpf">CPF: *</label>
+          <input
+            type="text"
+            id="cpf"
+            name="cpf"
+            placeholder="xxx.xxx.xxx-xx"
+            required
+          />
         </div>
-
-        <div class="form-row">
-          <div>
-            <label for="sexo-bebe">Sexo do Bebê:</label>
-            <select
-              id="sexo-bebe"
-              name="sexo-bebe"
-              class="estilo-personalizado"
-            >
-              <option value="masculino">Masculino</option>
-              <option value="feminino">Feminino</option>
-              <option value="nao-informar">Prefiro não informar</option>
-            </select>
-          </div>
-          <div>
-            <label for="tempo-gestacao">Tempo de Gestação (semanas):</label>
-            <input
-              type="number"
-              id="tempo-gestacao"
-              name="tempo-gestacao"
-              required
-              class="estilo-personalizado"
-            />
-          </div>
+        <div class="container-input tres-colunas">
+          <label for="telefone">Telefone: *</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(xx) x xxxx-xxxx"
+            required
+          />
         </div>
+        <div class="container-input tres-colunas">
+          <label for="data-parto">Data Provável do Parto (DPP): *</label>
+          <input type="date" id="data-parto" name="data-parto" required />
+        </div>
+      </div>
 
-        <div class="form-group">
-          <label for="instagram">Instagram:</label>
+      <!-- Sexo tempo instagram -->
+      <div class="form-row">
+        <div class="container-input tres-colunas">
+          <label for="sexo-bebe">Sexo do Bebê: *</label>
+          <select id="sexo-bebe" name="sexo-bebe">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="nao-informar">Prefiro não informar</option>
+          </select>
+        </div>
+        <div class="container-input tres-colunas">
+          <label for="tempo-gestacao">Tempo de Gestação (semanas): *</label>
+          <input
+            type="number"
+            id="tempo-gestacao"
+            name="tempo-gestacao"
+            required
+          />
+        </div>
+        <div class="container-input tres-colunas">
+          <label for="instagram">Instagram (aberto): *</label>
           <input
             type="text"
             id="instagram"
             name="instagram"
-            class="estilo-personalizado"
+            placeholder="@SeuInstagram"
           />
         </div>
+      </div>
 
-        <div class="form-row">
-          <div>
-            <label for="rua">Rua:</label>
-            <input
-              type="text"
-              id="rua"
-              name="rua"
-              required
-              class="estilo-personalizado"
-            />
-          </div>
-          <div>
-            <label for="numero">Número:</label>
-            <input
-              type="text"
-              id="numero"
-              name="numero"
-              required
-              class="estilo-personalizado"
-            />
-          </div>
+      <!-- Rua número -->
+      <div class="form-row">
+        <div class="container-input content-rua-endereco">
+          <label for="rua">Rua: *</label>
+          <input type="text" id="rua" name="rua" required />
         </div>
-
-        <div class="form-row">
-          <div>
-            <label for="estado">Estado:</label>
-            <input
-              type="text"
-              id="estado"
-              name="estado"
-              required
-              class="estilo-personalizado"
-            />
-          </div>
-          <div>
-            <label for="cep">CEP:</label>
-            <input
-              type="text"
-              id="cep"
-              name="cep"
-              required
-              class="estilo-personalizado"
-            />
-          </div>
-          <div>
-            <label for="cidade">Cidade:</label>
-            <input
-              type="text"
-              id="cidade"
-              name="cidade"
-              required
-              class="estilo-personalizado"
-            />
-          </div>
+        <div class="container-input content-numero-endereco">
+          <label for="numero">Número: *</label>
+          <input type="text" id="numero" name="numero" required />
         </div>
+      </div>
 
-        <div class="form-group">
-          <label for="email">E-mail:</label>
+      <!-- Estado cep cidade -->
+      <div class="form-row">
+        <div class="container-input tres-colunas">
+          <label for="estado">Estado: *</label>
+          <input type="text" id="estado" name="estado" required />
+        </div>
+        <div class="container-input tres-colunas">
+          <label for="cep">CEP: *</label>
+          <input type="text" id="cep" name="cep" placeholder="xxxxx-xx" />
+        </div>
+        <div class="container-input tres-colunas">
+          <label for="cidade">Cidade: *</label>
+          <input type="text" id="cidade" name="cidade" required />
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-row">
+        <div class="container-input">
+          <label for="email">E-mail: *</label>
           <input
             type="email"
             id="email"
             name="email"
+            placeholder="Seu e-mail"
             required
-            class="estilo-personalizado"
           />
         </div>
+      </div>
 
-        <div class="form-group">
-          <label for="historia">Conte sua História:</label>
+      <!-- Historia -->
+      <div class="form-row">
+        <div class="container-input">
+          <label for="historia">Conte sua História: *</label>
           <textarea
             id="historia"
             name="historia"
             rows="5"
+            placeholder="Por que você precisa de ajuda?"
             required
-            class="estilo-personalizado"
           ></textarea>
         </div>
+      </div>
 
-        <label>Autoriza usar sua imagem para divulgação?</label>
-        <div class="radio-group">
-          <label for="autorizo-sim">
-            <input
-              type="radio"
-              id="autorizo-sim"
-              name="autorizacao"
-              value="sim"
-              required
-            />
-            Sim
-          </label>
-          <label for="autorizo-nao">
-            <input
-              type="radio"
-              id="autorizo-nao"
-              name="autorizacao"
-              value="nao"
-              required
-            />
-            Não
-          </label>
+      <!-- Autorizacao -->
+      <div class="form-row">
+        <div class="container-input">
+          <div class="content-autorizacao">
+            <div class="label-autorizacao">
+              <label>Autoriza usar sua imagem para divulgação? *</label>
+              <span
+                >Assim podemos mostrar para o mundo como o projeto pode
+                ajudar</span
+              >
+            </div>
+            <div class="opcoes-autorizacao">
+              <label for="autorizo-sim" class="custom-radio">
+                <input
+                  type="radio"
+                  id="autorizo-sim"
+                  name="autorizacao"
+                  value="sim"
+                  required
+                />
+                Sim
+              </label>
+              <label for="autorizo-nao" class="custom-radio">
+                <input
+                  type="radio"
+                  id="autorizo-nao"
+                  name="autorizacao"
+                  value="nao"
+                  required
+                />
+                Não
+              </label>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <app-botao btn-text="Enviar" variant="rosa-letra-branca"></app-botao>
-      </form>
-    </div>
+      <app-botao btn-text="Enviar" variant="rosa-letra-branca"></app-botao>
+    </form>
   </div>
 </main>
 <app-footer></app-footer>

@@ -1,5 +1,4 @@
-@import
-"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap";
 
 :root {
   --rosa-claro: #feebee;
@@ -9,13 +8,16 @@
   --azul-escuro: #4bb9ba;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%; /* Isso garante que o body ocupe toda a altura da viewport */
@@ -44,12 +46,13 @@ body {
 }
 
 .content-center {
+  width: 100%;
   max-width: 1200px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 .introducao {
@@ -73,7 +76,6 @@ body {
   color: var(--azul-escuro);
   font-size: 1.5rem;
   font-weight: 400;
-
 }
 .introducao strong {
   color: var(--rosa-escuro);
@@ -94,4 +96,164 @@ body {
   margin-bottom: 0.5rem; /* Espaço entre os itens da lista */
   padding-left: 5px; /* Ajusta o espaço à esquerda para aproximar os marcadores do texto */
   list-style-type: disc; /* Define o tipo de marcador */
+}
+
+.container-formulario {
+  color: var(--rosa-escuro);
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-radius: 4rem;
+  background: var(--rosa-claro);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2rem;
+
+  padding: 3rem;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.container-input {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+}
+
+.label-autorizacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-autorizacao span {
+  margin-bottom: 0.6rem;
+}
+
+.opcoes-autorizacao {
+  display: flex;
+  gap: 3rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
+
+.opcoes-autorizacao label {
+  padding: 0;
+}
+
+label {
+  padding-bottom: 0.6rem;
+}
+
+.content-autorizacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tres-colunas {
+  flex: 1 1 30%;
+}
+
+.content-rua-endereco {
+  flex: 3;
+}
+
+.content-numero-endereco {
+  flex: 1;
+}
+
+.content-tipo-ajuda {
+  flex: 1;
+}
+
+.content-email-voluntario {
+  flex: 3;
+}
+
+.container-input span {
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: #f9aab6;
+}
+
+.container-input label {
+  white-space: nowrap;
+}
+
+.label-autorizacao label {
+  white-space: wrap !important;
+}
+
+::placeholder {
+  color: #f9aab6;
+  font-family: "Sylvia Angel", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+input,
+select,
+option,
+textarea {
+  color: #f9aab6;
+  font-family: "Sylvia Angel", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  border-radius: 10px;
+  background: #fff;
+  border: none;
+  padding: 0.6rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none; /* Remove a borda padrão de foco */
+  border: 2px solid var(--rosa-escuro); /* (Opcional) Define uma borda personalizada, se desejar */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+  .informacoes p {
+    width: 80%; /* Reduz a largura do texto */
+    font-size: 24px; /* Diminui o tamanho da fonte */
+  }
+
+  .informacoes h1 {
+    font-size: 36px; /* Diminui o tamanho do título */
+  }
+
+  .informacoes h3 {
+    font-size: 28px; /* Ajusta o subtítulo */
+  }
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 600px) {
+  .informacoes p {
+    width: 100%; /* O texto ocupa toda a largura */
+    font-size: 18px;
+  }
+
+  .informacoes h1 {
+    font-size: 24px;
+  }
+
+  .informacoes h3 {
+    font-size: 20px;
+  }
 }

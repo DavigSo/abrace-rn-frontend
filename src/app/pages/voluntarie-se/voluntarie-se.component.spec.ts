@@ -8,10 +8,9 @@ describe('VoluntarieSeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [VoluntarieSeComponent]
-    })
-    .compileComponents();
-    
+      imports: [VoluntarieSeComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(VoluntarieSeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
