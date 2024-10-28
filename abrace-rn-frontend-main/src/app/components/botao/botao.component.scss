@@ -65,5 +65,10 @@
     font-size: 45.984px;
     display: block; /* Torna o botão um bloco, necessário para margin auto */
     margin: 0 auto; /* Centraliza horizontalmente */
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
   }
 }

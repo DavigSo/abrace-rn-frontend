@@ -13,6 +13,11 @@
   height: 739px;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 768px) {
+    background-color: #fcdce1;
+  }
+
 }
 
 .svg-blob {
@@ -246,6 +251,12 @@ a {
   color: var(--azul-escuro);
   text-align: center;
   font-size: 24px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
 .container-quero-ajuda h1 {
@@ -273,6 +284,12 @@ a {
   color: var(--rosa-escuro);
   text-align: center;
   font-size: 24px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+
 }
 @media (max-width: 768px) {
   .app-participar-doacao {
@@ -292,9 +309,10 @@ a {
 
 .app-conhecer-ajudados {
   width: 100%;
-  height: 1400px;
+  height: 100%;
   flex-shrink: 0;
   padding: 20px;
+  overflow-x: scroll;
 
   h1 {
     width: 100%;
@@ -322,6 +340,13 @@ a {
     margin: auto;
     margin-top: 50px;
     padding: 50px;
+    overflow: scroll;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 100%;
+    }
+
   }
 
   .container-ajudados img {
@@ -348,6 +373,10 @@ a {
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    
     span {
       width: 500px;
       height: 100px;
@@ -356,7 +385,15 @@ a {
       font-style: normal;
       font-weight: 400;
       line-height: 43.624px;
-      padding-right: 100px;
+      word-wrap: break-word;
+      margin-right: 100px;
+
+      @media (max-width: 768px) {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 25%;
+      }
+
     }
   }
 }
@@ -380,6 +417,11 @@ a {
   justify-content: center; /* Centraliza o conteúdo verticalmente */
   align-items: center; /* Centraliza o conteúdo horizontalmente */
   text-align: center; /* Centraliza o texto */
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
 }
 
 .container-voluntarie-se h1 {
@@ -407,6 +449,12 @@ a {
   font-weight: 400;
   line-height: normal;
   margin-bottom: 20px; /* Espaçamento inferior entre o parágrafo e o botão */
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
 .container-voluntarie-se button {
@@ -420,6 +468,12 @@ a {
   align-items: center; /* Centraliza verticalmente */
   cursor: pointer;
   margin-top: 20px; /* Espaçamento superior entre o botão e o parágrafo */
+
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 80px;
+  }
+
 }
 
 .container-voluntarie-se button a {
@@ -433,6 +487,11 @@ a {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+
+  @media (max-width: 768px) {
+    font-size: 17px;
+  }
+
 }
 
 .container-voluntarie-se button:hover {

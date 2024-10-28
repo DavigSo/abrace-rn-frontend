@@ -12,6 +12,12 @@
 
 .content-center{
   padding: 2rem;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column !important;
+  }
+
 }
 
 .content-center:not(#introducao-sobre) {
@@ -45,6 +51,11 @@
   text-align: justify;
   width: 700px;
   font-family: "Montserrat", sans-serif;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
 }
 
 /* Imagens */
