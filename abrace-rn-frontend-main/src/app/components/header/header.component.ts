@@ -13,6 +13,7 @@ import { BotaoComponent } from '../botao/botao.component';
 })
 export class HeaderComponent {
   public currentRoute: string = '';
+  public isSidebarOpen: boolean = false;
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
     this.router.events.subscribe(() => {
@@ -24,4 +25,8 @@ export class HeaderComponent {
     return this.currentRoute === route;
   }
 
+  toggleSidebar() {
+    this.isSidebarOpen = !this.isSidebarOpen;
+  }
 }
+

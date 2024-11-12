@@ -1,13 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { HeaderComponent } from '../../components/header/header.component';
 import { BotaoComponent } from '../../components/botao/botao.component';
+import { PopupComponent } from '../../components/popup/popup.component';
 
 @Component({
   selector: 'app-voluntarie-se',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, BotaoComponent],
+  imports: [HeaderComponent, FooterComponent, BotaoComponent, PopupComponent],
   templateUrl: './voluntarie-se.component.html',
-  styleUrl: './voluntarie-se.component.scss',
+  styleUrls: ['./voluntarie-se.component.scss'],
 })
-export class VoluntarieSeComponent {}
+export class VoluntarieSeComponent {
+  @ViewChild(PopupComponent) popup!: PopupComponent;
+
+  submitForm(event: Event) {
+    // Evita o envio do formulário (não recarrega a página)
+    event.preventDefault();
+
+    // Exibe o popup
+    this.popup.showPopup();
+  }
+}

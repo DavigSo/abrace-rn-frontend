@@ -31,6 +31,7 @@
       action="https://api.sheetmonkey.io/form/pW3aZF4F2ZoApfZd7bGrbs"
       method="POST"
       autocomplete="on"
+      (submit)="submitForm($event)"
     >
       <!-- Campo Nome em uma linha completa -->
       <div class="form-row">
@@ -119,3 +120,5 @@
   </div>
 </main>
 <app-footer></app-footer>
+
+<app-popup #popup message="Formulário enviado com sucesso!"></app-popup>
