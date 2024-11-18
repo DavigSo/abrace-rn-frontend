@@ -106,3 +106,42 @@
   text-align: center; /* Centraliza o texto */
   margin: 20px 0; /* Espaço em cima e embaixo */
 }
+
+.floating-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 5rem;
+}
+
+.floating-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.floating-icons .whatsapp-icon {
+  background-color: #25D366; /* WhatsApp green */
+}
+
+.floating-icons .instagram-icon {
+  background-color: #E1306C; /* Instagram pink */
+}
+
+.floating-icons a img {
+  width: 60%; /* Make the image smaller to fit within the background */
+  height: 60%;
+  object-fit: contain;
+}
+
+.floating-icons a:hover {
+  transform: scale(1.1);
+}

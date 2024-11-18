@@ -603,3 +603,30 @@ a {
 .btn-show {
   display: none;
 }
+
+.arrow-icon {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 12px solid white; /* Change color as needed */
+  transform: rotate(0deg); /* Default: down arrow */
+}
+
+/* Add custom properties to control rotation for direction */
+.arrow-icon[data-direction="up"] {
+  transform: rotate(180deg);
+}
+
+.arrow-icon[data-direction="right"] {
+  transform: rotate(90deg);
+}
+
+.arrow-icon[data-direction="left"] {
+  transform: rotate(270deg);
+}
+
+.arrow-icon:hover {
+  border-bottom-color: gray; /* Change color on hover */
+}

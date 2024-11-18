@@ -3,11 +3,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { HeaderComponent } from '../../components/header/header.component';
 import { BotaoComponent } from '../../components/botao/botao.component';
 import { PopupComponent } from '../../components/popup/popup.component';
+import { NgxMaskDirective, NgxMaskPipe } from 'ngx-mask';
 
 @Component({
   selector: 'app-voluntarie-se',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, BotaoComponent, PopupComponent],
+  imports: [HeaderComponent, FooterComponent, BotaoComponent, PopupComponent, NgxMaskDirective, NgxMaskPipe],
   templateUrl: './voluntarie-se.component.html',
   styleUrls: ['./voluntarie-se.component.scss'],
 })
