@@ -32,9 +32,11 @@
 
 .img-card {
   width: 88%; /* A imagem se ajusta à largura do card */
-  height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+  height: 75%; /* A altura será ajustada automaticamente para manter a proporção */
   border-radius: 0.625rem;
   object-fit: cover; /* Garante que a imagem cubra o card */
+  max-height: fit-content !important;
+  margin-bottom: 2rem;
 }
 
 

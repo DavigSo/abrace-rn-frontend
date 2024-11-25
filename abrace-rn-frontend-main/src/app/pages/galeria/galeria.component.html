@@ -5,29 +5,9 @@
       <h1>Conheça alguns dos nossos recém-nascidos ajudados</h1>
     </div>
     <div class="galeria" id="galeria">
-      <div class="card">
-        <img class="img-card" src="assets/Imagem-de-pessoa-3.png" alt="Recém-nascido ajudado">
-        <p class="text-card">Henrique</p>
-      </div>
-      <div class="card">
-        <img class="img-card" src="assets/Imagem-de-pessoa-3.png" alt="Recém-nascido ajudado">
-        <p class="text-card">Henrique</p>
-      </div>
-      <div class="card">
-        <img class="img-card" src="assets/Imagem-de-pessoa-3.png" alt="Recém-nascido ajudado">
-        <p class="text-card">Henrique</p>
-      </div>
-      <div class="card">
-        <img class="img-card" src="assets/Imagem-de-pessoa-3.png" alt="Recém-nascido ajudado">
-        <p class="text-card">Henrique</p>
-      </div>
-      <div class="card">
-        <img class="img-card" src="assets/Imagem-de-pessoa-3.png" alt="Recém-nascido ajudado">
-        <p class="text-card">Henrique</p>
-      </div>
-      <div class="card">
-        <img class="img-card" src="assets/Imagem-de-pessoa-3.png" alt="Recém-nascido ajudado">
-        <p class="text-card">Henrique</p>
+      <div class="card" *ngFor="let card of cards">
+        <img class="img-card" [src]="card.src" alt="card.alt">
+        <p class="text-card">{{ card.txt }}</p>
       </div>
     </div>
   </div>

@@ -18,91 +18,16 @@
         <img src="./assets/instagram.svg" alt="Instagram" />
       </a>
     </div>
+    <!-- Produtos -->
     <section class="product-section">
-      <!-- 12 produtos (canecas) -->
-      <div class="product-item">
-        <img src="https://github.com/MakandaAraujo/Fotos/blob/main/bebe.png?raw=true" alt="Caneca" />
+      <div class="product-item" *ngFor="let product of products">
+        <img [src]="product.src" [alt]="product.name" class="product-img"/>
         <div class="product-details">
-          <span class="product-name">Caneca</span>
-          <span class="product-price"><span class="currency">R$</span>
-            <span class="amount">50,00</span></span>
-        </div>
-      </div>
-      <div class="product-item">
-        <img src="https://github.com/MakandaAraujo/Fotos/blob/main/bebe.png?raw=true" alt="Caneca" />
-        <div class="product-details">
-          <span class="product-name">Caneca</span><span class="product-price"><span class="currency">R$</span>
-            <span class="amount">50,00</span></span>
-        </div>
-      </div>
-      <div class="product-item">
-        <img src="https://github.com/MakandaAraujo/Fotos/blob/main/bebe.png?raw=true" alt="Caneca" />
-        <div class="product-details">
-          <span class="product-name">Caneca</span><span class="product-price"><span class="currency">R$</span>
-            <span class="amount">50,00</span></span>
-        </div>
-      </div>
-      <div class="product-item">
-        <img src="https://github.com/MakandaAraujo/Fotos/blob/main/bebe.png?raw=true" alt="Caneca" />
-        <div class="product-details">
-          <span class="product-name">Caneca</span><span class="product-price"><span class="currency">R$</span>
-            <span class="amount">50,00</span></span>
-        </div>
-      </div>
-      <div class="product-item">
-        <img src="https://github.com/MakandaAraujo/Fotos/blob/main/bebe.png?raw=true" alt="Caneca" />
-        <div class="product-details">
-          <span class="product-name">Caneca</span><span class="product-price"><span class="currency">R$</span>
-            <span class="amount">50,00</span></span>
-        </div>
-      </div>
-      <div class="product-item">
-        <img src="https://github.com/MakandaAraujo/Fotos/blob/main/bebe.png?raw=true" alt="Caneca" />
-        <div class="product-details">
-          <span class="product-name">Caneca</span><span class="product-price"><span class="currency">R$</span>
-            <span class="amount">50,00</span></span>
-        </div>
-      </div>
-      <div class="product-item">
-        <img src="https://github.com/MakandaAraujo/Fotos/blob/main/bebe.png?raw=true" alt="Caneca" />
-        <div class="product-details">
-          <span class="product-name">Caneca</span><span class="product-price"><span class="currency">R$</span>
-            <span class="amount">50,00</span></span>
-        </div>
-      </div>
-      <div class="product-item">
-        <img src="https://github.com/MakandaAraujo/Fotos/blob/main/bebe.png?raw=true" alt="Caneca" />
-        <div class="product-details">
-          <span class="product-name">Caneca</span><span class="product-price"><span class="currency">R$</span>
-            <span class="amount">50,00</span></span>
-        </div>
-      </div>
-      <div class="product-item">
-        <img src="https://github.com/MakandaAraujo/Fotos/blob/main/bebe.png?raw=true" alt="Caneca" />
-        <div class="product-details">
-          <span class="product-name">Caneca</span><span class="product-price"><span class="currency">R$</span>
-            <span class="amount">50,00</span></span>
-        </div>
-      </div>
-      <div class="product-item">
-        <img src="https://github.com/MakandaAraujo/Fotos/blob/main/bebe.png?raw=true" alt="Caneca" />
-        <div class="product-details">
-          <span class="product-name">Caneca</span><span class="product-price"><span class="currency">R$</span>
-            <span class="amount">50,00</span></span>
-        </div>
-      </div>
-      <div class="product-item">
-        <img src="https://github.com/MakandaAraujo/Fotos/blob/main/bebe.png?raw=true" alt="Caneca" />
-        <div class="product-details">
-          <span class="product-name">Caneca</span><span class="product-price"><span class="currency">R$</span>
-            <span class="amount">50,00</span></span>
-        </div>
-      </div>
-      <div class="product-item">
-        <img src="https://github.com/MakandaAraujo/Fotos/blob/main/bebe.png?raw=true" alt="Caneca" />
-        <div class="product-details">
-          <span class="product-name">Caneca</span><span class="product-price"><span class="currency">R$</span>
-            <span class="amount">50,00</span></span>
+          <span class="product-name">{{ product.name }}</span>
+          <span class="product-price">
+            <span class="currency">R$</span>
+            <span class="amount">{{ product.price }}</span>
+          </span>
         </div>
       </div>
     </section>
