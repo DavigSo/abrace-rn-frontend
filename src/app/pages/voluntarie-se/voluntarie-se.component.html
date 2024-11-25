@@ -28,8 +28,6 @@
     </div>
     <form
       class="container-formulario"
-      action="https://api.sheetmonkey.io/form/pW3aZF4F2ZoApfZd7bGrbs"
-      method="POST"
       autocomplete="on"
       (submit)="submitForm($event)"
     >
@@ -42,6 +40,7 @@
             id="name"
             name="name"
             placeholder="Digite seu nome completo"
+            [(ngModel)]="formData.nome"
             required
           />
         </div>
@@ -57,6 +56,7 @@
             name="cpf"
             placeholder="xxx.xxx.xxx-xx"
             mask="000.000.000-00"
+            [(ngModel)]="formData.cpf"
             required
           />
         </div>
@@ -67,15 +67,22 @@
             type="tel"
             id="phone"
             name="phone"
-            placeholder="(xx) x xxxx-xxxx "
+            placeholder="(xx) x xxxx-xxxx"
             mask="(00) 0 0000-0000"
+            [(ngModel)]="formData.telefone"
             required
           />
         </div>
 
         <div class="container-input tres-colunas">
           <label for="city">Cidade *</label>
-          <input type="text" id="city" name="city" required />
+          <input
+            type="text"
+            id="city"
+            name="city"
+            [(ngModel)]="formData.cidade"
+            required
+          />
         </div>
       </div>
 
@@ -83,9 +90,16 @@
       <div class="form-row">
         <div class="container-input content-tipo-ajuda">
           <label for="help-type">Tipo de ajuda *</label>
-          <select id="help-type" name="help-type" required>
+          <select
+            id="help-type"
+            name="help-type"
+            [(ngModel)]="formData.ajuda"
+            required
+          >
             <optgroup label="Tipo de ajuda">
-              <option value="">Recolhimento de doações</option>
+              <option value="Recolhimento de doações">
+                Recolhimento de doações
+              </option>
               <option value="oficinas">Oficinas</option>
               <option value="psicologico">Apoio psicológico</option>
               <option value="outro" selected>Outro</option>
@@ -99,6 +113,7 @@
             id="email"
             name="email"
             placeholder="Digite seu e-mail"
+            [(ngModel)]="formData.email"
             required
           />
         </div>
@@ -112,6 +127,7 @@
             id="message"
             name="message"
             rows="4"
+            [(ngModel)]="formData.mensagem"
             placeholder="Qualquer forma de ajuda é bem-vindo"
           ></textarea>
         </div>

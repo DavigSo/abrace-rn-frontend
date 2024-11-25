@@ -7,7 +7,7 @@ import { BotaoComponent } from '../botao/botao.component';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgOptimizedImage, SobreComponent, BotaoComponent],
+  imports: [BotaoComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })

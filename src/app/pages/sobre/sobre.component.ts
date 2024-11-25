@@ -6,7 +6,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 @Component({
   selector: 'app-sobre',
   standalone: true,
-  imports: [NgOptimizedImage, HeaderComponent, FooterComponent],
+  imports: [HeaderComponent, FooterComponent],
   templateUrl: './sobre.component.html',
   styleUrl: './sobre.component.scss',
 })
