@@ -18,4 +18,8 @@ import { OpcoesDoarComponent } from '../../components/opcoes-doar/opcoes-doar.co
   templateUrl: './doar-dinheiro.component.html',
   styleUrl: './doar-dinheiro.component.scss',
 })
-export class DoarDinheiroComponent {}
+export class DoarDinheiroComponent {
+  redirect = () => {
+    window.location.href = 'https://api.whatsapp.com/send/?phone=5583987075415&text=Gostaria+de+doar+um+kit+higiênico&type=phone_number&app_absent=0';
+  }
+}
