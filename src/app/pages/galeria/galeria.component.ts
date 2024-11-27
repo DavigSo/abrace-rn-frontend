@@ -7,31 +7,41 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-galeria',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, NgOptimizedImage, CommonModule],
+  imports: [HeaderComponent, FooterComponent, CommonModule],
   templateUrl: './galeria.component.html',
-  styleUrl: './galeria.component.scss',
+  styleUrl: './galeria.component.scss'
 })
 export class GaleriaComponent {
   cards = [
-    { src: 'assets/img1.jpg', alt: 'Imagem 1', txt: 'Teste' },
-    { src: 'assets/img2.jpg', alt: 'Imagem 2', txt: 'Teste' },
-    { src: 'assets/img3.jpg', alt: 'Imagem 3', txt: 'Teste' },
-    { src: 'assets/img4.jpg', alt: 'Imagem 4', txt: 'Teste' },
-    { src: 'assets/img5.jpg', alt: 'Imagem 5', txt: 'Teste' },
-    { src: 'assets/img6.jpg', alt: 'Imagem 6', txt: 'Teste' },
-    { src: 'assets/img7.jpg', alt: 'Imagem 7', txt: 'Teste' },
-    { src: 'assets/img8.jpg', alt: 'Imagem 8', txt: 'Teste' },
-    { src: 'assets/img9.jpg', alt: 'Imagem 9', txt: 'Teste' },
-    { src: 'assets/img10.jpg', alt: 'Imagem 10', txt: 'Teste' },
-    { src: 'assets/img11.jpg', alt: 'Imagem 11', txt: 'Teste' },
-    { src: 'assets/img12.jpg', alt: 'Imagem 12', txt: 'Teste' },
-    { src: 'assets/img13.jpg', alt: 'Imagem 13', txt: 'Teste' },
-    { src: 'assets/img14.jpg', alt: 'Imagem 14', txt: 'Teste' },
-    { src: 'assets/img15.jpg', alt: 'Imagem 15', txt: 'Teste' },
-    { src: 'assets/img16.jpg', alt: 'Imagem 16', txt: 'Teste' },
-    { src: 'assets/img17.jpg', alt: 'Imagem 17', txt: 'Teste' },
-    { src: 'assets/img18.jpg', alt: 'Imagem 18', txt: 'Teste' },
-    { src: 'assets/img19.jpg', alt: 'Imagem 19', txt: 'Teste' },
-    { src: 'assets/img20.jpg', alt: 'Imagem 20', txt: 'Teste' },
+    { src: 'assets/img1.jpg', alt: 'Imagem 1', txt: 'Kit Completo' },
+    { src: 'assets/img3.jpg', alt: 'Imagem 3', txt: 'Kit Roupinhas' },
+    { src: 'assets/img5.jpg', alt: 'Imagem 5', txt: 'Kit Higiene' },
+    {
+      src: 'assets/img11.jpg',
+      alt: 'Imagem 11',
+      txt: 'Hellen é uma das mães beneficiadas por nossas ações solidárias.'
+    },
+    {
+      src: 'assets/img12.jpg',
+      alt: 'Imagem 12',
+      txt: 'Emilly é uma mãe que recebeu apoio essencial de nossas doações.'
+    },
+    { src: 'assets/img13.jpg', alt: 'Imagem 13', txt: 'Doações sendo entregue a uma mãe!' },
+    {
+      src: 'assets/img15.jpg',
+      alt: 'Imagem 15',
+      txt: 'Rayane é uma das mães acolhidas pelo nosso programa de doações.'
+    },
+    { src: 'assets/img16.jpg', alt: 'Imagem 16', txt: 'Entrega de kit completo!' },
+    {
+      src: 'assets/img19.jpg',
+      alt: 'Imagem 19',
+      txt: 'Leandra encontrou na nossa iniciativa o suporte que precisava para ela e sua família.'
+    },
+    {
+      src: 'assets/img20.jpg',
+      alt: 'Imagem 20',
+      txt: 'Vitoria é uma das mulheres assistidas pelo nosso projeto.'
+    }
   ];
 }

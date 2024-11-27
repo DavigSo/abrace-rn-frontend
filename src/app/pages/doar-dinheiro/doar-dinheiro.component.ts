@@ -8,18 +8,13 @@ import { OpcoesDoarComponent } from '../../components/opcoes-doar/opcoes-doar.co
 @Component({
   selector: 'app-doar-dinheiro',
   standalone: true,
-  imports: [
-    HeaderComponent,
-    FooterComponent,
-    NgOptimizedImage,
-    BotaoComponent,
-    OpcoesDoarComponent,
-  ],
+  imports: [HeaderComponent, FooterComponent, BotaoComponent, OpcoesDoarComponent],
   templateUrl: './doar-dinheiro.component.html',
-  styleUrl: './doar-dinheiro.component.scss',
+  styleUrl: './doar-dinheiro.component.scss'
 })
 export class DoarDinheiroComponent {
   redirect = () => {
-    window.location.href = 'https://api.whatsapp.com/send/?phone=5583987075415&text=Gostaria+de+doar+um+kit+higiênico&type=phone_number&app_absent=0';
-  }
+    window.location.href =
+      'https://api.whatsapp.com/send/?phone=5583987075415&text=Gostaria+de+doar+um+kit+higiênico&type=phone_number&app_absent=0';
+  };
 }

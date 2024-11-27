@@ -11,26 +11,34 @@
       <!-- Inicialmente escondido -->
     </div>
     <div class="floating-icons">
-      <a href="https://abrir.link/bOXtq" target="_blank" class="whatsapp-icon" aria-label="WhatsApp">
+      <a
+        href="https://abrir.link/bOXtq"
+        target="_blank"
+        class="whatsapp-icon"
+        aria-label="WhatsApp"
+      >
         <img src="./assets/wpp.svg" alt="WhatsApp" />
       </a>
-      <a href="https://www.instagram.com/abraceumrn/" target="_blank" class="instagram-icon" aria-label="Instagram">
+      <a
+        href="https://www.instagram.com/abraceumrn/"
+        target="_blank"
+        class="instagram-icon"
+        aria-label="Instagram"
+      >
         <img src="./assets/instagram.svg" alt="Instagram" />
       </a>
     </div>
     <!-- Produtos -->
-    <section class="product-section">
-      <div class="product-item" *ngFor="let product of products">
-        <img [src]="product.src" [alt]="product.name" class="product-img"/>
-        <div class="product-details">
-          <span class="product-name">{{ product.name }}</span>
-          <span class="product-price">
-            <span class="currency">R$</span>
-            <span class="amount">{{ product.price }}</span>
-          </span>
-        </div>
-      </div>
-    </section>
+    <a href="https://www.instagram.com/lojinha.abraceumrn/" target="_blank"
+      ><section class="product-section">
+        <div class="product-item" *ngFor="let product of products">
+          <img [src]="product.src" [alt]="product.name" class="product-img" />
+          <div class="product-details">
+            <span class="product-name">{{ product.name }}</span>
+            <span class="product-price"> </span>
+          </div>
+        </div></section
+    ></a>
   </div>
 </main>
 
